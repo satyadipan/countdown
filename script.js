@@ -4,8 +4,7 @@ const birthdayDay = 19;   // Change this to the birthday day
 
 const birthday = new Date(currentYear, birthdayMonth, birthdayDay);
 const nextBirthday = new Date(currentYear + 1, birthdayMonth, birthdayDay);
-const birthdayMessageElement = document.getElementById("birthdayMessage");
-const birthdayCanvasElement = document.getElementById("birthdayCanvas");
+
 
 function isTodayBirthday(birthday) {
   const today = new Date();
