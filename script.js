@@ -43,7 +43,7 @@ function updateCountdown() {
   `;
 
   if (isTodayBirthday(birthday)) {
-    window.location.href = "today_birthday.html";
+    window.location.href = "birthday_wish.html";
     // Display birthday canvas or any other celebration animation here
   } else {
     
