@@ -1,6 +1,6 @@
 const currentYear = new Date().getFullYear();
 const birthdayMonth = 7; // Change this to the birthday month (0-indexed)
-const birthdayDay = 14;   // Change this to the birthday day
+const birthdayDay = 13;   // Change this to the birthday day
 
 const birthday = new Date(currentYear, birthdayMonth, birthdayDay);
 const nextBirthday = new Date(currentYear + 1, birthdayMonth, birthdayDay);
