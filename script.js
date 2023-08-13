@@ -1,6 +1,6 @@
 const currentYear = new Date().getFullYear();
-const birthdayMonth = 8; // Change this to the birthday month (0-indexed)
-const birthdayDay = 19;   // Change this to the birthday day
+const birthdayMonth = 7; // Change this to the birthday month (0-indexed)
+const birthdayDay = 14;   // Change this to the birthday day
 
 const birthday = new Date(currentYear, birthdayMonth, birthdayDay);
 const nextBirthday = new Date(currentYear + 1, birthdayMonth, birthdayDay);
@@ -43,13 +43,14 @@ function updateCountdown() {
   `;
 
   if (isTodayBirthday(birthday)) {
-    birthdayMessageElement.innerHTML = `<h1>Happy Birthday Amal!</h1>`;
+    window.location.href = "today_birthday.html";
     // Display birthday canvas or any other celebration animation here
   } else {
-    birthdayMessageElement.innerHTML = "";
+    
     // Clear birthday canvas or any other celebration animation here
   }
 }
+
 
 updateCountdown();
 setInterval(updateCountdown, 1000);
