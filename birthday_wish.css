@@ -355,3 +355,31 @@ footer {
 		opacity: 1;
 	}
 }
+
+/* Add the following media query to target screens with a maximum width of 768px (typical for mobile devices) */
+@media (max-width: 768px) {
+    body {
+      background: linear-gradient(to bottom, #e2b8f7, #acbff9); /* Adjust the gradient colors */
+    }
+    
+    #card, #card-front, #card-inside {
+      height: auto; /* Allow the height to adjust based on content */
+      width: 100%; /* Full width for mobile */
+      position: relative; /* Adjust positioning */
+      left: 0;
+    }
+  
+    /* Other styles you might want to adjust for mobile readability */
+    #card h1 {
+      font-size: 28px;
+    }
+    
+    p {
+      font-size: 14px;
+    }
+  
+    .signed {
+      font-size: 18px;
+    }
+  }
+  
